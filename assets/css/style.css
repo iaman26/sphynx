@@ -7,7 +7,7 @@
     width: 100%;
   }
   body {
-    background-color: #f5eddb;
+    background-color: #fee3c6;
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
     color: #000;
@@ -18,15 +18,19 @@
   .index {
     position: relative;
   }
-  .img-bg {
-    
-    
-  }
   .block-top {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
+  }
+  
+  .img-bg-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -99999999999;
   }
   .header-row {
     display: grid;
@@ -133,7 +137,6 @@
     margin: 240px auto 20px;
     margin-left: 50px;
   }
-  
   .banner-row {
     max-width: 650px;
     margin: 0 auto;
@@ -171,9 +174,6 @@
     height: 40px;
     object-fit: contain;
     margin: 20px;
-  }
-  .logo-slider-main {
-    padding: 60px 0 60px;
   }
   .logo-slider-row {
     position: relative;
@@ -343,7 +343,7 @@
   }
   
   .cta-boxs-main {
-    padding: 120px 0 60px;
+    padding: 120px 0 240px;
   }
   .font-h3 {
     font-size: 24px;
@@ -368,7 +368,7 @@
     margin-bottom: 20px;
   }
   .copy-code-main {
-    padding: 60px 0 120px;
+    padding: 60px 0 380px;
   }
   
   .copy-code-row {
@@ -404,6 +404,7 @@
   }
   
   .token-box {
+    height: 500px;
     padding: 50px 30px;
     background-color: rgb(204 163 73 / 20%);
     border-radius: 30px;
@@ -432,7 +433,7 @@
   }
   
   .token-boxs-main {
-    padding: 60px 0;
+    padding: 120px 0;
   }
   
   .token-boxs-row .font-h1 {
@@ -705,6 +706,11 @@
       background-color: #000;
       margin: 6px 0;
   }
+  .bannerlogo {
+    max-width: 400px;
+    margin: 50px auto 20px;
+    margin-left: 137px;
+  }
   .menu-btn {
     width: 50px;
     margin: 0 0 0 auto;
@@ -803,11 +809,6 @@
     position: relative;
   }
   
-  .logo-slider-main {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-  }
   
   .logo-slider {
     display: inline-block;
@@ -907,4 +908,19 @@
     max-width: 100%;
     height: auto;
     max-height: 500px; /* Giới hạn chiều cao để không làm biến dạng hình ảnh */
+  }
+  @media (max-width:1080px) {
+    .img-bg {
+      display: none;
+    }
+    .block-top {
+      position: relative;
+    }
+    .bannerlogo {
+      max-width: 600px;
+      margin: 50px auto 20px;
+    }
+    .banner-wrap {
+      padding: 20px 0 0;
+  }
   }
